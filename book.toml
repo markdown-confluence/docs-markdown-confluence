@@ -1,0 +1,17 @@
+[book]
+authors = ["andymac4182"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Markdown Confluence Integration"
+create-missing = false
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output.html]
+git-repository-url = "https://github.com/markdown-confluence/docs"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/markdown-confluence/docs/edit/main/{path}"
+cname = "markdown-confluence.com"
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
