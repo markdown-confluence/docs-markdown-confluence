@@ -1,0 +1,33 @@
+name: Docs to Confluence
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "confluence"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Harden Runner
+      uses: step-security/harden-runner@6b3083af2869dc3314a0257a42f4af696cc79ba3 # v2.3.1
+      with:
+        egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+          
+    - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+
+    - name: Publish to Confluence
+      uses: markdown-confluence/publish-action@main
+      with:
+        atlassianApiToken: ${{ secrets.ATLASSIAN_API_TOKEN }}
+        configFile: /github/workspace/confluence-config.json
+
+      
