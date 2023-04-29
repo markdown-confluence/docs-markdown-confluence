@@ -1,7 +1,3 @@
----
-connie-publish: true
-connie-page-id: '1015809'
----
 ## Wikilinks Support
 
 The Confluence Integration plugin for Obsidian offers basic support for Wikilinks. This support is limited to linking to other files that are being published. If a Wikilink refers to a page that is not set to be published, the link will be removed during the publishing process and will be rendered as plain text in Confluence.

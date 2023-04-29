@@ -1,7 +1,3 @@
----
-connie-publish: true
-connie-page-id: '819231'
----
 ## Mermaid Diagram Support
 
 As Confluence does not currently support [Mermaid](https://mermaid.js.org/) diagrams natively, the Confluence Integration plugin for Obsidian provides a workaround to enable the rendering of Mermaid diagrams. The plugin includes a copy of Mermaid that is injected into a [BrowserWindow](https://www.electronjs.org/docs/latest/api/browser-window), which is then used to render each diagram and capture a screenshot as a PNG image. This image is then uploaded to Confluence for rendering.

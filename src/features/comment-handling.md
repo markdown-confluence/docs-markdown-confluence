@@ -1,7 +1,3 @@
----
-connie-publish: true
-connie-page-id: '851982'
----
 # Comment Handling
 
 This plugin attempts to find the original location of a comment and reattach it. If it cannot determine the correct location, it will add a section to the bottom of the page and place the comment there.

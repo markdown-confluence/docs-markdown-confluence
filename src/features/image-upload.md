@@ -1,7 +1,3 @@
----
-connie-publish: true
-connie-page-id: '1114113'
----
 ## Image Upload
 
 The Image Upload feature ensures that any images included in a page are uploaded as attachments for that specific page in Confluence. This means that if the same image is used in multiple pages, it is uploaded into each respective page as an attachment.
