@@ -9,6 +9,8 @@ create-missing = false
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
 
+[preprocessor.yml-header]
+
 [output.html]
 git-repository-url = "https://github.com/markdown-confluence/docs"
 git-repository-icon = "fa-github"

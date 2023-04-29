@@ -35,6 +35,7 @@ jobs:
         curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.27/mdbook-v0.4.27-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
         echo `pwd`/mdbook >> $GITHUB_PATH
         cargo install mdbook-mermaid
+        cargo install mdbook-yml-header
     - name: Deploy GitHub Pages
       run: |
         # This assumes your book is in the root of your repository.
