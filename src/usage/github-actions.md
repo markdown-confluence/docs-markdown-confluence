@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1278241'
+---
 # markdown-confluence/publish GitHub Action
 
 This GitHub Action wraps up an NPM CLI that allows you to publish your Markdown files to Confluence quickly and easily. By using this action in your workflows, you can automate the process of publishing documentation to Confluence, making it faster, more streamlined, and more efficient.

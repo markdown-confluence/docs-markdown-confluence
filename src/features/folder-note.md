@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1442161'
+---
 ## Folder Notes
 
 The Folder Note feature allows you to define and manage the content for the "Folder" in Confluence by creating a file directly in the folder with the same name as the folder. This feature ensures that the file is not uploaded as a child of the page in Confluence, but instead becomes the page under which other files are uploaded.

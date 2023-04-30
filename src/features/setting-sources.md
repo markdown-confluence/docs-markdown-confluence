@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1442001'
+---
 # Settings Loaders
 
 This document describes the different settings loaders used to load and merge settings for the `ConfluenceSettings` configuration object. Each loader is responsible for loading settings from a specific source, and they can be combined to create a merged configuration.

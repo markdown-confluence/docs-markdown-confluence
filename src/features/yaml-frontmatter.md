@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1442185'
+---
 ## YAML Frontmatter Support
 
 The Confluence Integration plugin for Obsidian supports various YAML frontmatter items, allowing you to customize and modify how the publish process works.

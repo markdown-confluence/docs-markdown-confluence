@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1442188'
+---
 ## Supported Markdown Features
 
 The Confluence Integration plugin for Obsidian supports a variety of Markdown features, allowing you to create rich and interactive content in your Confluence pages. The following Markdown elements are supported:

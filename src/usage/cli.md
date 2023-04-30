@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1409233'
+---
 # NPM CLI
 
 This tool is designed to make the process of publishing documentation to Confluence faster, more streamlined, and more efficient. It supports multiple authentication methods and allows you to publish your Markdown files to any Confluence space or page of your choice.

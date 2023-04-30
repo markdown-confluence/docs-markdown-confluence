@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1409444'
+---
 ## Folder Structure
 
 The folder structure feature is designed to help you easily manage and organize your files when they are published to Confluence. The plugin will identify the first common folder and match the folder structure in your local Obsidian vault in Confluence. This also ensures the plugin will move pages on Confluence to align with your local file layout.

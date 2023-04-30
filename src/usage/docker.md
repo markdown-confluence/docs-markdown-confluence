@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1343688'
+---
 # Docker Image
 
 The `ghcr.io/markdown-confluence/publish:latest` Docker image is a ready-to-use container that wraps up the npm CLI and has the same arguments. By using this Docker image, you can quickly start publishing your Markdown files to Confluence without the need to set up the npm CLI tool manually.

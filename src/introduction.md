@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1442144'
+---
 # Markdown to Confluence Tools
 
 Welcome to the `markdown-confluence` project, your one-stop solution to bridging the gap between the simple, intuitive world of Markdown and the robust, versatile realm of Confluence! We know you love the ease and convenience of writing in Markdown, and we're here to make sure you can continue doing just that, without compromising the ability to publish your content on Confluence. With our suite of tools, including an Obsidian plugin, npm CLI, Docker CLI, GitHub Action, and npm library, you can effortlessly convert your Markdown files to Atlassian Document Format (ADF) and seamlessly integrate them with Confluence.
