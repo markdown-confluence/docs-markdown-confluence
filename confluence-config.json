@@ -3,5 +3,6 @@
     "confluenceParentId": "524353",
     "atlassianUserName": "andrew.mcclenaghan@gmail.com",
     "folderToPublish": ".",
-    "contentRoot": "/github/workspace/src/"
+    "contentRoot": "/github/workspace/src/",
+    "firstHeadingPageTitle": true
   }
