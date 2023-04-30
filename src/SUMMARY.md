@@ -1,8 +1,6 @@
 ---
 connie-publish: false
 ---
-# Summary
-
 [Introduction](introduction.md)
 
 - [Usage](./usage/index.md)
