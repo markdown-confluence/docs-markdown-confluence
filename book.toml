@@ -3,7 +3,7 @@ authors = ["andymac4182"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Markdown Confluence Integration"
+title = "Markdown Confluence Tools"
 create-missing = false
 
 [preprocessor.mermaid]
