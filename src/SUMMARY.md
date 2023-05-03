@@ -22,5 +22,9 @@ connie-publish: false
 	- [Wikilinks](./features/wikilinks.md)
     - [Setting Sources](setting-sources.md)
 
+- [Development Guide](./development/guide.md)
+  - [Obsidian](./development/obsidian.md)
+  - [CLI](./development/cli.md)
+
 [Thanks](./thanks.md)
 [Changelog](CHANGELOG.md)
