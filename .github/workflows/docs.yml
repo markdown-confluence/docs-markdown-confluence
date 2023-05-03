@@ -44,7 +44,7 @@ jobs:
         mdbook-mermaid install .
         mdbook build
         cd ./book
-        npx static-sitemap-cli --base https://markdown-confluence.com
+        npx static-sitemap-cli --no-clean --base https://markdown-confluence.com
     - name: Setup Pages
       uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 # v3.0.6
     - name: Upload artifact
