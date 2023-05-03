@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1835022'
+---
 # 📘 Obsidian Development
 
 To work on Obsidian development, follow these steps:

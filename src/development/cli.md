@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1736714'
+---
 ## 🏗️ Building and Testing the CLI
 
 To build and test the CLI for the markdown-confluence project, follow these steps:

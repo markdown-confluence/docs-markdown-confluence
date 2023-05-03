@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '1736718'
+---
 # Markdown-Confluence Development Guide 🚀
 
 Welcome to the development documentation for the markdown-confluence project! Let's dive into the development process for this fantastic TypeScript project that uses `tsc` and `esbuild` for building and packaging.
