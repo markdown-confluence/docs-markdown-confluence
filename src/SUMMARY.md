@@ -11,7 +11,7 @@ connie-publish: false
   - [Obsidian](./usage/obsidian.md)
 
 - [Supported Features](./features/index.md)
-    - [Comments](./features/comment-handling.md)
+  - [Comments](./features/comment-handling.md)
 	- [Supported Markdown](./features/supported-markdown.md)
 	- [Folder Note](./features/folder-note.md)
 	- [Folder Structure](./features/folder-structure.md)
@@ -20,7 +20,8 @@ connie-publish: false
 	- [YAML Frontmatter](./features/yaml-frontmatter.md)
 	- [Callouts](./features/callouts.md)
 	- [Wikilinks](./features/wikilinks.md)
-    - [Setting Sources](setting-sources.md)
+  - [Setting Sources](./features/setting-sources.md)
+  - [Mentions](./features/mentions.md)
 
 - [Development Guide](./development/guide.md)
   - [Obsidian](./development/obsidian.md)
