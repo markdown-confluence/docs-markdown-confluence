@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '3735553'
+---
 # Markdown-Confluence: Unleashing the Ninja Power of Raw Atlassian Document Format Blocks 🥷
 
 Greetings, honorable Markdown-Confluence user! Are you ready to unleash the ninja power of raw Atlassian Document Format (ADF) blocks in your Markdown? Behold, the secret technique to render ADF elements in your Markdown-Confluence documents! 🐉
