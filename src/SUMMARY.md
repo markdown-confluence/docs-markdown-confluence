@@ -22,6 +22,7 @@ connie-publish: false
   - [Wikilinks](./features/wikilinks.md)
   - [Setting Sources](./features/setting-sources.md)
   - [Mentions](./features/mentions.md)
+  - [Raw ADF](./features/raw-adf.md)
 
 - [Development Guide](./development/guide.md)
   - [Obsidian](./development/obsidian.md)
