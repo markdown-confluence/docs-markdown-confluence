@@ -30,7 +30,7 @@ This mystical incantation will transform into an ADF node, as described in the a
 
 To peer into the heart of the `atlaskit_doc_format`, which stores the ADF content, you must invoke the power of the forbidden API. Gaze upon its hidden knowledge:
 
-https://markdown-confluence.atlassian.net/wiki/rest/api/content/2916353?expand=body.atlas_doc_format
+[https://markdown-confluence.atlassian.net/wiki/rest/api/content/2916353?expand=body.atlas_doc_format](https://markdown-confluence.atlassian.net/wiki/rest/api/content/2916353?expand=body.atlas_doc_format)
 
 To adapt this technique to your own Confluence domain and page, replace the domain with your Confluence site domain and `2916353` with the page id you wish to reveal the ADF for.
 
