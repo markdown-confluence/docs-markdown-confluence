@@ -25,6 +25,7 @@ The path to enlightenment begins with the following example, young grasshopper:
 ~~~
 
 This mystical incantation will transform into an ADF node, as described in the ancient scrolls of Atlassian: [Atlassian Document Format Structure](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure/)
+For the latest information on nodes check out [https://atlaskit.atlassian.com/packages/editor/adf-schema](https://atlaskit.atlassian.com/packages/editor/adf-schema). You can use unpkg to view the nodes folder under types and see what attributes you can set on each node type. [https://unpkg.com/browse/@atlaskit/adf-schema@25.6.0/dist/types/schema/nodes/](https://unpkg.com/browse/@atlaskit/adf-schema@25.6.0/dist/types/schema/nodes/). NB. This unpkg link is for a particular version. Make sure you use the latest version for any new updates.
 
 ## The Forbidden API Technique
 
