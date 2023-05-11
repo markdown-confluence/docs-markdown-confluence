@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '3506177'
+---
 # 🚀 Mentions Support: It's Time to Have Fun with Mentions! 🎉
 
 Hello there, fellow adventurer! Are you ready to embark on a thrilling journey to bring your Markdown Confluence skills to the next level? Do you want to engage your teammates and colleagues in a fun and interactive way? Say no more, as you've just arrived at the perfect destination! 🌟
