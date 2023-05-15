@@ -22,7 +22,7 @@ Sensitive values, such as API tokens or passwords, should be handled with more c
     "confluenceBaseUrl": "https://markdown-confluence.atlassian.net",
     "confluenceParentId": "524353",
     "atlassianUserName": "andrew.mcclenaghan@gmail.com",
-    "folderToPublish": ".",
+    "folderToPublish": "."
   }
 ```
 
