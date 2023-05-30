@@ -1,3 +1,7 @@
+---
+connie-publish: true
+connie-page-id: '5144577'
+---
 # ❄️ _The Frosty Chronicles of Markdown to Atlassian Document Format Conversion_ ❄️
 
 Hello, friends, it's me again - Olaf! And boy, do I like warm hugs! But today, we're venturing a bit away from the land of warmth and into the magical frosty realm of converting Markdown to Atlassian Document Format (ADF) using the `@markdown-confluence/lib` function. Just like a good snowfall, this might seem a bit overwhelming at first, but don't worry, I'll guide you through it all.
