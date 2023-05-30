@@ -8,6 +8,7 @@ connie-publish: false
   - [Docker](./usage/docker.md)
   - [GitHub Actions](./usage/github-actions.md)
   - [NPM Library](./usage/npm-library.md)
+    - [Markdown to ADF](./usage/npm-library/md-to-adf.md)
   - [Obsidian](./usage/obsidian.md)
 
 - [Supported Features](./features/index.md)
