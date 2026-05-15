@@ -13,7 +13,7 @@ Introducing **Mentions Support** in Markdown-Confluence! A feature that allows y
 To conjure up a mention, you just need to type the following magical incantation:
 
 ```
-[[mentions:{userid}|@{Users Name}]]
+[[mention:{userid}|@{Users Name}]]
 ```
 
 This magical spell transforms into a marvelous Atlassian Document Format Mention node. You can learn more about the enchanting world of nodes [here](https://developer.atlassian.com/cloud/jira/platform/apis/document/nodes/mention/).
@@ -47,7 +47,7 @@ Now that you've obtained the User ID, you can cast the magical mention spell!
 
 For instance, if you want to mention `Captain Confluence` with their User ID, you'd simply type:
 ```
-[[mentions:557058:aea5688c-52b9-4d15-aabe-96def1abc413|@Captain Confluence]]
+[[mention:557058:aea5688c-52b9-4d15-aabe-96def1abc413|@Captain Confluence]]
 ```
 
 And there you have it, brave adventurer! You've mastered the art of **Mentions Support** in Markdown-Confluence. Spread the joy and summon your teammates in a fun and captivating way, making your collaboration experience more delightful than ever! 🎊🎉
