@@ -24,3 +24,7 @@ Vercel's GitHub integration deploys `main` to production and pull requests to pr
 Edit guides in `content/current`, navigation in `content/documentation-navigation.json`, use cases in `content/use-cases.json`, and layouts in `src`. The original guides are retained under `content/legacy`. Keep old URL redirects in `vercel.json` aligned with the client aliases; the route tests check them. `scripts/build-route-files.mjs` generates metadata-bearing SPA entry files, sitemap and robots rules. Article bodies are rendered in the browser.
 
 The product source and release artifacts remain in https://github.com/markdown-confluence/markdown-confluence. Changes here affect only the public website. The previous mdBook site and publishing workflows remain available in Git history.
+
+## Hosting migration
+
+The Vercel GitHub connection uses `markdown-confluence/docs-markdown-confluence` with `main` as the production branch. GitHub Pages is disabled. The last mdBook revision is `5cf2dd2791550ebfa5c15c8410712408aa5812c7`; its source remains available in Git history. To recover a failed website release, roll back to a known-good deployment in the existing Vercel project, then fix or revert the source commit.
