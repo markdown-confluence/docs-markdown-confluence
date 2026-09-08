@@ -1,0 +1,273 @@
+[
+	{
+		"id": "start",
+		"title": "Get started",
+		"description": "Understand the workflow and connect your Confluence site.",
+		"guides": [
+			{
+				"slug": "getting-started",
+				"title": "Overview & first steps",
+				"summary": "Choose your publishing tool and know what you need before you begin.",
+				"nextSteps": ["obsidian", "cli"]
+			},
+			{
+				"slug": "authentication",
+				"title": "Connect to Confluence",
+				"summary": "Choose API tokens or OAuth and configure the right site addresses.",
+				"nextSteps": ["obsidian", "cli"]
+			}
+		]
+	},
+	{
+		"id": "publish",
+		"title": "Publish your docs",
+		"description": "Follow the setup guide for the tool you use.",
+		"guides": [
+			{
+				"slug": "obsidian",
+				"title": "Publish from Obsidian",
+				"summary": "Install the desktop plugin and publish your first vault note.",
+				"nextSteps": ["publishing", "dataview"]
+			},
+			{
+				"slug": "cli",
+				"title": "Publish from the CLI",
+				"summary": "Configure a Markdown folder and publish it from your terminal.",
+				"nextSteps": ["publishing", "usage/github-actions"]
+			},
+			{
+				"slug": "usage/github-actions",
+				"title": "Automate with GitHub Actions",
+				"summary": "Set up repository secrets and publish from a GitHub workflow.",
+				"nextSteps": ["features/yaml-frontmatter", "troubleshooting"]
+			},
+			{
+				"slug": "usage/docker",
+				"title": "Run with Docker",
+				"summary": "Mount your content and run the publisher in a container.",
+				"nextSteps": ["publishing", "troubleshooting"]
+			},
+			{
+				"slug": "blog-posts",
+				"title": "Publish blog posts",
+				"summary": "Share dated updates with labels and attachments in a Confluence space.",
+				"nextSteps": ["features/yaml-frontmatter", "publishing-lifecycle"]
+			},
+			{
+				"slug": "preflight",
+				"title": "Validate, plan & report",
+				"summary": "Validate offline, preview destinations without writes, and collect JSON results.",
+				"nextSteps": ["cli", "publishing-lifecycle"]
+			}
+		]
+	},
+	{
+		"id": "organize",
+		"title": "Organize your pages",
+		"description": "Choose what gets published and where it belongs.",
+		"guides": [
+			{
+				"slug": "publishing",
+				"title": "Select & control publishing",
+				"summary": "Select notes by folder or tag, reuse content, and set publishing behavior.",
+				"nextSteps": ["features/folder-structure", "features/yaml-frontmatter"]
+			},
+			{
+				"slug": "publishing-lifecycle",
+				"title": "Publishing & updates",
+				"summary": "Understand page IDs, repeated runs, conflicts and source ownership.",
+				"nextSteps": ["features/comment-handling", "troubleshooting"]
+			},
+			{
+				"slug": "features/folder-structure",
+				"title": "Build a page hierarchy",
+				"summary": "Understand how selected folders map to your Confluence parent page.",
+				"nextSteps": ["features/folder-note", "features/wikilinks"]
+			},
+			{
+				"slug": "features/folder-note",
+				"title": "Add folder overview pages",
+				"summary": "Give a folder page its own content with an index or folder note.",
+				"nextSteps": ["features/yaml-frontmatter", "publishing"]
+			},
+			{
+				"slug": "features/yaml-frontmatter",
+				"title": "Page properties & frontmatter",
+				"summary": "Set titles, labels, publication choices, and saved page identifiers.",
+				"nextSteps": ["publishing", "features/comment-handling"]
+			},
+			{
+				"slug": "features/comment-handling",
+				"title": "Preserve inline comments",
+				"summary": "Understand how publishing changes affects existing page comments.",
+				"nextSteps": ["troubleshooting", "publishing"]
+			},
+			{
+				"slug": "page-edit-locks",
+				"title": "Restrict page editing",
+				"summary": "Keep editing with the publishing account and understand permissions and unlocking.",
+				"nextSteps": ["authentication", "publishing-lifecycle"]
+			}
+		]
+	},
+	{
+		"id": "content",
+		"title": "Format your content",
+		"description": "Bring links, images, diagrams, and richer blocks into your pages.",
+		"guides": [
+			{
+				"slug": "features/supported-markdown",
+				"title": "Markdown support",
+				"summary": "Find the supported syntax and understand conversion limits.",
+				"nextSteps": ["features/callouts", "features/wikilinks"]
+			},
+			{
+				"slug": "features/wikilinks",
+				"title": "Link & embed notes",
+				"summary": "Connect published pages and reuse Markdown from your notes.",
+				"nextSteps": ["features/image-upload", "publishing"]
+			},
+			{
+				"slug": "features/image-upload",
+				"title": "Images & attachments",
+				"summary": "Reference local images and files and publish them as attachments.",
+				"nextSteps": ["diagrams", "troubleshooting"]
+			},
+			{
+				"slug": "features/callouts",
+				"title": "Callouts & expand blocks",
+				"summary": "Turn note, tip, and foldable callouts into Confluence panels.",
+				"nextSteps": ["features/supported-markdown", "features/raw-adf"]
+			},
+			{
+				"slug": "diagrams",
+				"title": "Mermaid & PlantUML",
+				"summary": "Configure Mermaid output and PlantUML, or choose Kroki for more diagram types.",
+				"nextSteps": ["kroki", "features/image-upload"]
+			},
+			{
+				"slug": "latex",
+				"title": "LaTeX equations",
+				"summary": "Publish inline and display mathematics with automatic local rendering.",
+				"nextSteps": ["features/supported-markdown", "export"]
+			},
+			{
+				"slug": "dataview",
+				"title": "Dataview results",
+				"summary": "Publish evaluated Obsidian tables, lists, and tasks.",
+				"nextSteps": ["publishing", "troubleshooting"]
+			},
+			{
+				"slug": "features/mentions",
+				"title": "Mention people",
+				"summary": "Reference Confluence users in your Markdown.",
+				"nextSteps": ["features/supported-markdown", "features/raw-adf"]
+			},
+			{
+				"slug": "features/raw-adf",
+				"title": "Raw ADF & macros",
+				"summary": "Preserve rich Confluence blocks that plain Markdown cannot express.",
+				"nextSteps": ["export", "export-confluence"]
+			},
+			{
+				"slug": "kroki",
+				"title": "Kroki diagrams",
+				"summary": "Render more diagram languages through a trusted PNG or SVG rendering server.",
+				"nextSteps": ["diagrams", "features/setting-sources"]
+			},
+			{
+				"slug": "structured-content",
+				"title": "Footnotes, macros & tables",
+				"summary": "Publish excerpts, page properties, YAML tables, footnotes and Jira links.",
+				"nextSteps": ["features/raw-adf", "features/setting-sources"]
+			}
+		]
+	},
+	{
+		"id": "extend",
+		"title": "Export & integrate",
+		"description": "Bring pages back to Markdown or build a custom integration.",
+		"guides": [
+			{
+				"slug": "export-confluence",
+				"title": "Export a Confluence page",
+				"summary": "Read an existing page into Markdown or its original ADF.",
+				"nextSteps": ["export", "features/raw-adf"]
+			},
+			{
+				"slug": "export",
+				"title": "Convert Markdown & ADF",
+				"summary": "Convert local files and choose readable or lossless output.",
+				"nextSteps": ["export-confluence", "library"]
+			},
+			{
+				"slug": "library",
+				"title": "Use the Node.js library",
+				"summary": "Compose publishing and conversion into your own application.",
+				"nextSteps": ["features/setting-sources", "development/guide"]
+			},
+			{
+				"slug": "features/setting-sources",
+				"title": "Configuration reference",
+				"summary": "Look up settings, defaults, environment variables, CLI flags and precedence.",
+				"nextSteps": ["library", "authentication"]
+			}
+		]
+	},
+	{
+		"id": "help",
+		"title": "Troubleshoot & upgrade",
+		"description": "Resolve common problems and move an existing workflow to v7.",
+		"guides": [
+			{
+				"slug": "troubleshooting",
+				"title": "Troubleshooting",
+				"summary": "Find the next check for access, selection, images, diagrams, and export problems.",
+				"nextSteps": ["authentication", "publishing"]
+			},
+			{
+				"slug": "upgrade-to-v7",
+				"title": "Upgrade to v7",
+				"summary": "Review installation, authentication, and library changes before upgrading.",
+				"nextSteps": ["release-notes", "authentication"]
+			},
+			{
+				"slug": "release-notes",
+				"title": "What\u2019s new in v7",
+				"summary": "Explore all shipped v7 features, publishing controls, richer content and migration changes.",
+				"nextSteps": ["upgrade-to-v7", "getting-started"]
+			}
+		]
+	},
+	{
+		"id": "contribute",
+		"title": "Contribute",
+		"description": "Work on the project and its integrations.",
+		"guides": [
+			{
+				"slug": "development/guide",
+				"title": "Development setup",
+				"summary": "Set up the repository with Node.js, pnpm, and Vite+.",
+				"nextSteps": ["development/cli", "development/obsidian"]
+			},
+			{
+				"slug": "development/cli",
+				"title": "CLI development",
+				"summary": "Build and work on the command-line package.",
+				"nextSteps": ["library", "development/guide"]
+			},
+			{
+				"slug": "development/obsidian",
+				"title": "Plugin development",
+				"summary": "Develop and test the Obsidian integration.",
+				"nextSteps": ["development/guide", "obsidian"]
+			},
+			{
+				"slug": "thanks",
+				"title": "Acknowledgements",
+				"summary": "Meet the projects and contributors behind Markdown Confluence.",
+				"nextSteps": ["development/guide", "release-notes"]
+			}
+		]
+	}
+]

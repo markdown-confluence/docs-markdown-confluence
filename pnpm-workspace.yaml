@@ -1,0 +1,10 @@
+overrides:
+  vite: npm:@voidzero-dev/vite-plus-core@0.1.24
+  vitest: npm:@voidzero-dev/vite-plus-test@0.1.24
+peerDependencyRules:
+  allowedVersions:
+    vite: 0.1.24
+    vitest: 0.1.24
+allowBuilds:
+  esbuild: false
+  msgpackr-extract: false

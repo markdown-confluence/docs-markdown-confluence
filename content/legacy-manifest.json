@@ -1,0 +1,142 @@
+[
+	{
+		"slug": "development/cli",
+		"title": "CLI development",
+		"category": "Development",
+		"legacyPaths": ["/development/cli.html"],
+		"sourcePath": "content/legacy/development/cli-development.md"
+	},
+	{
+		"slug": "development/guide",
+		"title": "Development guide",
+		"category": "Development",
+		"legacyPaths": ["/development/guide.html"],
+		"sourcePath": "content/legacy/development/guide.md"
+	},
+	{
+		"slug": "development/obsidian",
+		"title": "Obsidian development",
+		"category": "Development",
+		"legacyPaths": ["/development/obsidian.html"],
+		"sourcePath": "content/legacy/development/obsidian-development.md"
+	},
+	{
+		"slug": "features/callouts",
+		"title": "Callouts",
+		"category": "Features",
+		"legacyPaths": ["/features/callouts.html"],
+		"sourcePath": "content/legacy/features/callouts.md"
+	},
+	{
+		"slug": "features/comment-handling",
+		"title": "Comment handling",
+		"category": "Features",
+		"legacyPaths": ["/features/comment-handling.html"],
+		"sourcePath": "content/legacy/features/comment-handling.md"
+	},
+	{
+		"slug": "features/folder-note",
+		"title": "Folder notes",
+		"category": "Features",
+		"legacyPaths": ["/features/folder-note.html"],
+		"sourcePath": "content/legacy/features/folder-note.md"
+	},
+	{
+		"slug": "features/folder-structure",
+		"title": "Folder structure",
+		"category": "Features",
+		"legacyPaths": ["/features/folder-structure.html"],
+		"sourcePath": "content/legacy/features/folder-structure.md"
+	},
+	{
+		"slug": "features/image-upload",
+		"title": "Image uploads",
+		"category": "Features",
+		"legacyPaths": ["/features/image-upload.html"],
+		"sourcePath": "content/legacy/features/image-upload.md"
+	},
+	{
+		"slug": "features/mentions",
+		"title": "Mentions",
+		"category": "Features",
+		"legacyPaths": ["/features/mentions.html"],
+		"sourcePath": "content/legacy/features/mentions.md"
+	},
+	{
+		"slug": "features/mermaid",
+		"title": "Mermaid diagrams",
+		"category": "Features",
+		"legacyPaths": ["/features/mermaid.html"],
+		"sourcePath": "content/legacy/features/mermaid.md"
+	},
+	{
+		"slug": "features/raw-adf",
+		"title": "Raw ADF blocks",
+		"category": "Features",
+		"legacyPaths": ["/features/raw-adf.html"],
+		"sourcePath": "content/legacy/features/raw-adf.md"
+	},
+	{
+		"slug": "features/setting-sources",
+		"title": "Configuration sources",
+		"category": "Features",
+		"legacyPaths": ["/features/setting-sources.html"],
+		"sourcePath": "content/legacy/features/setting-sources.md"
+	},
+	{
+		"slug": "features/supported-markdown",
+		"title": "Supported Markdown",
+		"category": "Features",
+		"legacyPaths": ["/features/supported-markdown.html"],
+		"sourcePath": "content/legacy/features/supported-markdown.md"
+	},
+	{
+		"slug": "features/wikilinks",
+		"title": "Wikilinks",
+		"category": "Features",
+		"legacyPaths": ["/features/wikilinks.html"],
+		"sourcePath": "content/legacy/features/wikilinks.md"
+	},
+	{
+		"slug": "features/yaml-frontmatter",
+		"title": "YAML frontmatter",
+		"category": "Features",
+		"legacyPaths": ["/features/yaml-frontmatter.html"],
+		"sourcePath": "content/legacy/features/yaml-frontmatter.md"
+	},
+	{
+		"slug": "thanks",
+		"title": "Thanks",
+		"category": "Project",
+		"legacyPaths": ["/thanks.html"],
+		"sourcePath": "content/legacy/thanks.md"
+	},
+	{
+		"slug": "usage/cli",
+		"title": "CLI",
+		"category": "Workflows",
+		"legacyPaths": ["/usage/cli.html"],
+		"sourcePath": "content/legacy/usage/archived-cli-guide.md"
+	},
+	{
+		"slug": "usage/docker",
+		"title": "Docker",
+		"category": "Workflows",
+		"legacyPaths": ["/usage/docker.html"],
+		"sourcePath": "content/legacy/usage/docker.md"
+	},
+	{
+		"slug": "usage/github-actions",
+		"title": "GitHub Actions",
+		"category": "Workflows",
+		"legacyPaths": ["/usage/github-actions.html", "/usage/github_action.html"],
+		"sourcePath": "content/legacy/usage/github-actions.md"
+	},
+	{
+		"slug": "usage/npm-library/md-to-adf",
+		"title": "Markdown to ADF",
+		"category": "Workflows",
+		"legacyPaths": ["/usage/npm-library/md-to-adf.html"],
+		"sourcePath": "content/legacy/usage/npm-library/md-to-adf.md"
+	}
+]

@@ -1,0 +1,197 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "vp run build",
+  "outputDirectory": "dist",
+  "installCommand": "npx --yes --package vite-plus@0.1.24 vp install --frozen-lockfile",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/CHANGELOG.html",
+      "destination": "/docs/release-notes",
+      "permanent": true
+    },
+    {
+      "source": "/changelog.html",
+      "destination": "/docs/release-notes",
+      "permanent": true
+    },
+    {
+      "source": "/development/cli.html",
+      "destination": "/docs/development/cli",
+      "permanent": true
+    },
+    {
+      "source": "/development/guide.html",
+      "destination": "/docs/development/guide",
+      "permanent": true
+    },
+    {
+      "source": "/development/obsidian.html",
+      "destination": "/docs/development/obsidian",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/mermaid",
+      "destination": "/docs/diagrams",
+      "permanent": true
+    },
+    {
+      "source": "/docs/usage/cli",
+      "destination": "/docs/cli",
+      "permanent": true
+    },
+    {
+      "source": "/docs/usage/node-library",
+      "destination": "/docs/library",
+      "permanent": true
+    },
+    {
+      "source": "/docs/usage/npm-library",
+      "destination": "/docs/library",
+      "permanent": true
+    },
+    {
+      "source": "/docs/usage/npm-library/md-to-adf",
+      "destination": "/docs/library",
+      "permanent": true
+    },
+    {
+      "source": "/docs/usage/obsidian",
+      "destination": "/docs/obsidian",
+      "permanent": true
+    },
+    {
+      "source": "/features/callouts.html",
+      "destination": "/docs/features/callouts",
+      "permanent": true
+    },
+    {
+      "source": "/features/comment-handling.html",
+      "destination": "/docs/features/comment-handling",
+      "permanent": true
+    },
+    {
+      "source": "/features/folder-note.html",
+      "destination": "/docs/features/folder-note",
+      "permanent": true
+    },
+    {
+      "source": "/features/folder-structure.html",
+      "destination": "/docs/features/folder-structure",
+      "permanent": true
+    },
+    {
+      "source": "/features/image-upload.html",
+      "destination": "/docs/features/image-upload",
+      "permanent": true
+    },
+    {
+      "source": "/features/index.html",
+      "destination": "/docs/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/features/mentions.html",
+      "destination": "/docs/features/mentions",
+      "permanent": true
+    },
+    {
+      "source": "/features/mermaid.html",
+      "destination": "/docs/diagrams",
+      "permanent": true
+    },
+    {
+      "source": "/features/raw-adf.html",
+      "destination": "/docs/features/raw-adf",
+      "permanent": true
+    },
+    {
+      "source": "/features/setting-sources.html",
+      "destination": "/docs/features/setting-sources",
+      "permanent": true
+    },
+    {
+      "source": "/features/supported-markdown.html",
+      "destination": "/docs/features/supported-markdown",
+      "permanent": true
+    },
+    {
+      "source": "/features/wikilinks.html",
+      "destination": "/docs/features/wikilinks",
+      "permanent": true
+    },
+    {
+      "source": "/features/yaml-frontmatter.html",
+      "destination": "/docs/features/yaml-frontmatter",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/docs/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/introduction.html",
+      "destination": "/docs/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/thanks.html",
+      "destination": "/docs/thanks",
+      "permanent": true
+    },
+    {
+      "source": "/usage/cli.html",
+      "destination": "/docs/cli",
+      "permanent": true
+    },
+    {
+      "source": "/usage/docker.html",
+      "destination": "/docs/usage/docker",
+      "permanent": true
+    },
+    {
+      "source": "/usage/github-actions.html",
+      "destination": "/docs/usage/github-actions",
+      "permanent": true
+    },
+    {
+      "source": "/usage/github_action.html",
+      "destination": "/docs/usage/github-actions",
+      "permanent": true
+    },
+    {
+      "source": "/usage/index.html",
+      "destination": "/docs/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/usage/node-library.html",
+      "destination": "/docs/library",
+      "permanent": true
+    },
+    {
+      "source": "/usage/npm-library.html",
+      "destination": "/docs/library",
+      "permanent": true
+    },
+    {
+      "source": "/usage/npm-library/md-to-adf.html",
+      "destination": "/docs/library",
+      "permanent": true
+    },
+    {
+      "source": "/usage/obsidian.html",
+      "destination": "/docs/obsidian",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/spa-fallback.html"
+    }
+  ],
+  "cleanUrls": false
+}

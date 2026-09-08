@@ -1,0 +1,287 @@
+[
+	{
+		"slug": "engineering-docs",
+		"title": "Engineering documentation",
+		"audience": "For engineering teams",
+		"headline": "Ship the code. Share the context.",
+		"description": "Keep architecture decisions, runbooks and setup guides beside your code. Publish them where the rest of the company can read them.",
+		"color": "blue",
+		"icon": "code",
+		"artifact": "architecture.md",
+		"example": "# Why we chose a queue\n\n## Decision\nProcess jobs asynchronously.\n\n```mermaid\nflowchart LR\n  API --> Queue --> Worker\n```\n\n## Trade-off\nRetries must be idempotent.",
+		"outputTitle": "Why we chose a queue",
+		"outputLabels": ["Decision", "Architecture diagram", "Trade-off"],
+		"pain": "The implementation changes in a pull request. The explanation is still in a wiki someone has to update by hand. Soon, the two tell different stories.",
+		"payoff": "Review documentation alongside code, then publish the approved Markdown to Confluence. Engineers keep their repository workflow; teammates get a page they can find and discuss.",
+		"steps": [
+			[
+				"Write beside the code",
+				"Keep runbooks and decisions in a docs folder. Use Markdown links, diagrams and code examples."
+			],
+			[
+				"Review the change",
+				"Review source in a pull request. Configure your GitHub workflow to publish after the branch or approval conditions you choose."
+			],
+			[
+				"Publish the page tree",
+				"The publisher maps selected folders to Confluence pages and records page IDs for future updates."
+			]
+		],
+		"benefits": [
+			[
+				"Context travels with the change",
+				"The documentation source lives in the same review workflow as the implementation."
+			],
+			[
+				"Diagrams stay editable",
+				"Mermaid source stays in Git while readers see rendered diagrams in Confluence."
+			],
+			[
+				"Check before publishing",
+				"Validate offline, inspect a read-only plan, and keep JSON reports with your CI run."
+			]
+		],
+		"guide": "usage/github-actions",
+		"guideLabel": "Set up GitHub publishing",
+		"related": ["cli", "features/folder-structure", "diagrams", "preflight"],
+		"limit": "Your workflow decides when publishing runs. Commit the generated page IDs or otherwise retain the updated source between runs. Confluence edits are not automatically merged back into Git."
+	},
+	{
+		"slug": "obsidian-knowledge-sharing",
+		"title": "Obsidian knowledge sharing",
+		"audience": "For people who think in notes",
+		"headline": "Your vault is personal. Your insights don\u2019t have to be.",
+		"description": "Turn selected Obsidian notes into useful team knowledge without asking everyone to adopt your writing tools.",
+		"color": "lavender",
+		"icon": "notes",
+		"artifact": "project-notes.md",
+		"example": "---\nconnie-publish: true\ntags: [team-knowledge]\n---\n# Project context\n\n[[Architecture decision]]\n\n![[Research#Key findings]]\n\n> [!tip] Start here\n> Read the decision before the details.",
+		"outputTitle": "Project context",
+		"outputLabels": ["Linked decisions", "Selected research section", "A helpful callout"],
+		"pain": "Your best thinking is connected across notes, links and snippets. Sharing it means pasting fragments into a different editor and rebuilding the context.",
+		"payoff": "Choose the notes your team needs, publish them to Confluence, and keep writing in Obsidian. Linked pages, selected embeds and attachments make the journey with them.",
+		"steps": [
+			[
+				"Choose what leaves your vault",
+				"Use a publishing folder, matching tags or explicit frontmatter. Set connie-publish: false on scanned notes you want to exclude."
+			],
+			[
+				"Keep the useful connections",
+				"Publish linked targets together and reuse whole notes or selected headings and blocks."
+			],
+			[
+				"Share and update",
+				"Publish from the desktop plugin. Make your next edit in Markdown and publish again when it is ready."
+			]
+		],
+		"benefits": [
+			[
+				"Share a selection",
+				"You decide the publishing set rather than moving your whole vault."
+			],
+			["Bring the context", "Supported wikilinks and embeds connect the pages readers need."],
+			[
+				"Control the publish",
+				"Exclude folders or cancel after the active request; completed writes remain."
+			]
+		],
+		"guide": "obsidian",
+		"guideLabel": "Connect your Obsidian vault",
+		"related": ["publishing", "features/wikilinks", "dataview"],
+		"limit": "The plugin runs in desktop Obsidian and is installed from release assets. Selected embeds include their content in the published note; review included sections as well as the publishing selection."
+	},
+	{
+		"slug": "research-and-mathematics",
+		"title": "Research & mathematics",
+		"audience": "For researchers and technical writers",
+		"headline": "Share the reasoning. Keep the equations.",
+		"description": "Publish mathematical notes, technical diagrams and evaluated research tables as readable Confluence pages.",
+		"color": "sage",
+		"icon": "math",
+		"artifact": "model-notes.md",
+		"example": "# Model notes\n\nEnergy is $E=mc^2$.\n\n$$\n\\sigma = \\sqrt{\\frac{1}{N}\\sum_i(x_i-\\mu)^2}\n$$\n\n## References\n[[Papers/Measurement study]]",
+		"outputTitle": "Model notes",
+		"outputLabels": ["Inline equations", "Display mathematics", "Linked references"],
+		"pain": "A technical explanation needs more than paragraphs. Equations, diagrams and research tables lose their meaning when you have to flatten or rebuild them in another editor.",
+		"payoff": "Keep LaTeX and diagrams in source. Version 7 renders equations locally and publishes the results as attachments. In Obsidian, supported Dataview queries can publish as native tables, lists and tasks.",
+		"steps": [
+			[
+				"Write the technical source",
+				"Use dollar-delimited inline or display mathematics, Mermaid, and links to your supporting notes."
+			],
+			[
+				"Enable research tables if needed",
+				"In Obsidian, enable Dataview and Publish Dataview results for supported TABLE, LIST or TASK queries."
+			],
+			[
+				"Publish a readable explanation",
+				"Equations and diagrams become images; evaluated tables become Confluence content alongside your writing."
+			]
+		],
+		"benefits": [
+			[
+				"No separate equation service",
+				"Bundled MathJax renders locally without a Marketplace app or TeX installation."
+			],
+			[
+				"Query source stays editable",
+				"Dataview evaluates again on publication, including when its Markdown dependencies change."
+			],
+			[
+				"References stay connected",
+				"Footnotes publish with return links; structured YAML tables support explicit spans."
+			]
+		],
+		"guide": "latex",
+		"guideLabel": "Publish your first equation",
+		"related": ["dataview", "diagrams", "features/wikilinks", "structured-content"],
+		"limit": "Published equations are images, and page export cannot restore their editable TeX. Dataview results are snapshots, evaluated in Obsidian; DataviewJS, inline expressions and live interactive views are not supported."
+	},
+	{
+		"slug": "team-handbooks",
+		"title": "Team handbooks & runbooks",
+		"audience": "For teams that repeat good practice",
+		"headline": "Write the useful bit once. Put it where it\u2019s needed.",
+		"description": "Build onboarding guides and runbooks from reusable Markdown sections, with a page hierarchy your team can navigate.",
+		"color": "peach",
+		"icon": "book",
+		"artifact": "onboarding.md",
+		"example": "# Welcome to the team\n\n![[Shared setup#Access checklist]]\n\n> [!note] Need a hand?\n> Ask the platform team.\n\n```toc\n```\n\n## First week\n- [ ] Read the service runbook",
+		"outputTitle": "Welcome to the team",
+		"outputLabels": ["Shared access checklist", "Helpful callout", "Table of contents"],
+		"pain": "The same access checklist appears in five guides. An update means hunting down copies, and readers are never sure which version is current.",
+		"payoff": "Reuse a whole note, heading or block in multiple source pages. Publish the affected pages to bring the shared content into each destination, with folder notes and a table of contents to help readers find their way.",
+		"steps": [
+			[
+				"Create shared sections",
+				"Store repeated instructions in a source note and embed only the heading or block each guide needs."
+			],
+			[
+				"Give the handbook a structure",
+				"Use folders and folder notes for landing pages. Add a TOC, callouts and visible frontmatter properties."
+			],
+			[
+				"Republish affected guides",
+				"Update the shared source and publish the pages that include it. Keep the Markdown files as the maintained source."
+			]
+		],
+		"benefits": [
+			[
+				"Fewer source copies to maintain",
+				"One shared section can supply multiple Markdown guides."
+			],
+			[
+				"Consistent page context",
+				"Apply a common header or footer to source pages when the same information belongs everywhere."
+			],
+			[
+				"Keep editing with your source",
+				"Optionally restrict editing to the publishing account while preserving viewing restrictions."
+			]
+		],
+		"guide": "publishing",
+		"guideLabel": "Build reusable publishing content",
+		"related": [
+			"features/folder-note",
+			"features/callouts",
+			"features/yaml-frontmatter",
+			"page-edit-locks"
+		],
+		"limit": "Embeds are expanded during publication, not live transclusions in Confluence. Changes reach a destination when that page is published again. Markdown files and rendered content still need a clear owner."
+	},
+	{
+		"slug": "release-updates",
+		"title": "Release updates & team blogs",
+		"audience": "For teams sharing progress",
+		"headline": "Let the work become the update.",
+		"description": "Publish release notes and project updates from Markdown as Confluence blog posts, with labels and attachments.",
+		"color": "yellow",
+		"icon": "release",
+		"artifact": "september-update.md",
+		"example": "---\nconnie-publish: true\nconnie-content-type: blogpost\nconnie-blog-post-date: \"2026-09-08\"\ntags: [release-notes]\n---\n# September update\n\n## Shipped\n- Inline and display equations\n- Confluence page export",
+		"outputTitle": "September update",
+		"outputLabels": ["Confluence blog post", "Release notes label", "Images & attachments"],
+		"pain": "Release notes are drafted near the work, then copied into a second place for the wider team. The final publishing step becomes another manual chore.",
+		"payoff": "Mark a Markdown note as a blog post and publish it into a Confluence space with Blogs enabled. Keep updates, labels and attachments in the same repeatable workflow.",
+		"steps": [
+			[
+				"Write the update",
+				"Draft a standalone Markdown file and add blog-post frontmatter with a quoted date."
+			],
+			[
+				"Choose the destination",
+				"Configure an existing parent page in the target space and use an account with blog-post creation permission."
+			],
+			[
+				"Publish and keep the ID",
+				"The source receives the content ID. Retain it to update the same post on later runs."
+			]
+		],
+		"benefits": [
+			[
+				"Use the right destination",
+				"A dated team update can be a blog post rather than another page in a handbook."
+			],
+			[
+				"Label the update",
+				"YAML tags become Confluence labels that travel with the published content."
+			],
+			[
+				"Bring the demo",
+				"Local MP4 embeds publish as attachment media groups alongside release notes."
+			]
+		],
+		"guide": "blog-posts",
+		"guideLabel": "Publish a Confluence blog post",
+		"related": ["features/yaml-frontmatter", "usage/github-actions", "features/image-upload"],
+		"limit": "Blogs must be enabled in the destination space. A date sets blog-post metadata; it is not a future publishing scheduler. Changing an existing page\u2019s type does not automatically migrate it to a blog post."
+	},
+	{
+		"slug": "confluence-to-markdown",
+		"title": "Confluence to local tools",
+		"audience": "For teams working across formats",
+		"headline": "Bring a page back into your workflow.",
+		"description": "Read a Confluence page into Markdown or ADF for local review, processing or reuse.",
+		"color": "blue",
+		"icon": "export",
+		"artifact": "terminal",
+		"example": "vp dlx @markdown-confluence/cli@7.0.0 \\\n  to-markdown --page 123456 \\\n  --output confluence-page.md\n\n# Prefer simpler Markdown?\n# Add --readable",
+		"outputTitle": "confluence-page.md",
+		"outputLabels": [
+			"Local file output",
+			"Readable or lossless mode",
+			"Original page left unchanged"
+		],
+		"pain": "Useful knowledge already lives in Confluence, but the next step needs a local file: a review, a conversion script, or another tool in your workflow.",
+		"payoff": "Export a page by URL or ID using your existing credentials. Choose readable Markdown for people or preserve rich ADF content in lossless mode when structure matters.",
+		"steps": [
+			[
+				"Identify the page",
+				"Supply its numeric ID or supported Confluence page URL. Read access and connection settings are required; a publishing parent is not."
+			],
+			[
+				"Choose the output",
+				"Use to-markdown for Markdown, --readable for simpler output, or to-adf for the original ADF document."
+			],
+			[
+				"Use the file locally",
+				"Review, transform or store the output. File-to-file and stdin/stdout conversion also work without Confluence credentials."
+			]
+		],
+		"benefits": [
+			["Read without changing the source page", "Export is a separate read operation."],
+			[
+				"Choose the trade-off",
+				"Readable output simplifies rich content; default lossless mode preserves it in ADF fences."
+			],
+			[
+				"Compose it into your tools",
+				"Use files, pipes or the Node.js library to fit the next step in your workflow."
+			]
+		],
+		"guide": "export-confluence",
+		"guideLabel": "Export a Confluence page",
+		"related": ["export", "library", "features/raw-adf"],
+		"limit": "Export does not download attachments, migrate media IDs or recreate server-side macro objects and comments. It is not a whole-space migration or automatic two-way sync. Published equation images remain images."
+	}
+]

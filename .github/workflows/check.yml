@@ -1,0 +1,22 @@
+name: Website checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+      - uses: voidzero-dev/setup-vp@v1
+        with:
+          node-version: "24.15.0"
+          cache: true
+          run-install: false
+      - run: vp install --frozen-lockfile
+      - run: vp run check
+      - run: vp run fmt:check
+      - run: vp test run
+      - run: vp run build
